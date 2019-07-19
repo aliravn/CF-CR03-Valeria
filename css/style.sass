@@ -101,7 +101,7 @@ main
 	margin: 0 auto /*centers main within the body*/
 	width: 100%	/*makes main 100% width of body*/
 
-h1, h3, h4, p
+h1, h2, h3, h4, p
 	margin: 0
 
 /*================
@@ -133,8 +133,34 @@ h1, h3, h4, p
 	margin: 0 auto
 	width: 88%
 	height: 55vw
+	display: flex
+	flex-flow: column
+	align-items: center
+	justify-content: flex-start
 	border: 2px solid grey
 	border-radius: 0 0 3px 3px
+	h2
+		font-size: 5vw /*check font-size, jumping out of container when resized*/
+		font-weight: normal
+		width: 60%
+		height: 10vw
+		text-align: center
+		margin: 3% auto
+
+
+#calculator
+	border: 1px solid black
+	width: 90%
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+
+.input-field-container
+	width: 50%
+	margin-bottom: 2vw
+
+#calc-btn
+	/*add color, dimensions, border-radius, text-color */
 
 #main-up-text
 	margin: 1vw auto
