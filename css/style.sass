@@ -100,7 +100,10 @@ footer
 main
 	margin: 0 auto /*centers main within the body*/
 	width: 100%	/*makes main 100% width of body*/
-	
+
+h1, h3, h4, p
+	margin: 0
+
 /*================
   MAIN-UP SECTION
   ================*/
@@ -110,7 +113,7 @@ main
 	background-size: 100%
 	background-color: lightgrey
 	width: 100%
-	height: 82vw
+	height: 83vw
 
 #page-header
 	width: 100%
@@ -125,7 +128,8 @@ main
 		margin-left: 3vw
 
 #form-container
-	background-color: lightgreen /*replace, add transparency*/
+	background-color: white
+	opacity: 0.8
 	margin: 0 auto
 	width: 88%
 	height: 55vw
@@ -133,20 +137,29 @@ main
 	border-radius: 0 0 3px 3px
 
 #main-up-text
-	background-color: lightpink /*remove*/
-	margin: 0 auto
-	width: 88%
-	text-align: center
+	margin: 1vw auto
+	width: 100%
+	display: flex
+	flex-flow: column
+	justify-content: center
+	align-items: center
+	font-size: 2.5vw
+	h3
+		font-weight: normal
+		font-size: 4vw
 
+#line-two
+	width: 60%
+	text-align: center
 /*=================
   MAIN-DOWN SECTION
   =================*/
 #main-down
-	background-color: lightgreen /*remove afterwards*/
 	width: 100%
 	display: flex
 	justify-content: space-between
 	align-items: center
+	margin-top: 4.5%
 
 .main-down-box
 	background-color: white
@@ -155,7 +168,7 @@ main
 	justify-content: center
 	align-items: center
 	margin: 4vw 5vw
-	border-top: 3px solid black
+	border-top: 1px solid black
 	box-shadow: 1px 1px grey, -1px -1px grey
 
 article
@@ -173,9 +186,6 @@ article
 	font-size: 120%
 	font-weight: normal
 	color: #47598f
-
-h1, h4, p
-	margin: 0
 
 .text-containers
 	margin-bottom: 4%
