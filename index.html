@@ -60,10 +60,10 @@
 			  			<span>Horsepower of your car:</span>
 						<input type="text" id="hps" placeholder="130">
 					</div>	
-			  		<input type="submit" id="calc-btn" value="Calculate"><br>
+			  		<input type="submit" id="calc-button" value="Calculate"><br>
 			  	</div>
 
-			  	<div id="output">Printed calculation goes here</div>
+			  	<div id="output"> </div>
 
 			</div>
 			
@@ -149,19 +149,25 @@
 <script>	
 	function calculateInsurance() {
 		var name = document.getElementById("name").value; //gets value of name from form
-		var age = document.getElementById("age").value; // gets value of age from form
+		var age = Number(document.getElementById("age").value); // gets value of age from form
 		var country = document.getElementById("country").value; // gets value of country from form
-		var hps = document.getElementById("hps").value; // gets value of hps from form
+		var hps = Number(document.getElementById("hps").value); // gets value of hps from form
 		console.log(name, age, country, hps);
-		
+		// add checker for numbers and restart the calculation again
+		// add else if checking by value of input country Austria, Hungary, Greece
+		if (country == "at") {
+			var result = hps * 100 / age + 50; // testcase Austria - OK
+		} else if (country == "hu") {
+			var result = hps * 120 / age + 100; // testcase Hungary - OK
+		} else {
+			var result = ((hps * 150) / (age + 3)) + 50; // testcase Greece - Ok
+		}
+		console.log(result);
 
-		var insurance = liter/km * 100; 
-
-
-		var output = insurance.toFixed(1); // rounds value of var res to max. 1 dec. point
-		document.getElementById("output").innerHTML = "Dear <b>" + name + "</b>, insurance for your car will cost " + output + " EUR </b>";
+		var insurance = result.toFixed(2); // rounds value of var result to max. 1 dec. point
+		document.getElementById("output").innerHTML = "Dear <b>" + name + "</b>, insurance for your car will cost <b>" + insurance + " EUR </b>";
 	}
-
+		document.getElementById("calc-button").addEventListener("click", calculateInsurance, false);
 	
 	// Anja and Christoph option with nice layout
 	// <div id="form-div">the whole form is inside the div</div> and it is also inside the style-div
