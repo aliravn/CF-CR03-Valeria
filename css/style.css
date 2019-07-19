@@ -132,24 +132,36 @@ h1, h2, h3, h4, p {
   justify-content: flex-start;
   border: 2px solid grey;
   border-radius: 0 0 3px 3px; }
-  #form-container h2 {
-    font-size: 5vw;
+
+#form-header {
+  height: 10vw;
+  border: 1px solid red;
+  width: 60%;
+  margin: 3% auto;
+  padding: 1vw; }
+  #form-header h2 {
+    font-size: 4vw;
     font-weight: normal;
-    width: 60%;
-    height: 10vw;
-    text-align: center;
-    margin: 3% auto; }
+    text-align: center; }
 
 #calculator {
   border: 1px solid black;
   width: 90%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: space-between; }
 
 .input-field-container {
-  width: 50%;
-  margin-bottom: 2vw; }
+  width: 49%;
+  margin-bottom: 2vw;
+  border: 1px solid blue; }
+  .input-field-container input {
+    width: 25vw;
+    border: 1px solid black; }
+  .input-field-container select {
+    width: 25vw;
+    border: 1px solid black;
+    padding: 1px; }
 
 #calc-btn {
   /*add color, dimensions, border-radius, text-color */ }
