@@ -1,11 +1,13 @@
 $header-color: #fff3f3
 $footer-color: #171717
 $text-color: #ffffff
+$h4-text-color: #525F87
 
 body
 	margin: 0 auto
 	width: 95%
-	max-width: 1200px
+	max-width: 1300px
+	font-size: 2vw
 	font-family: 'Roboto Condensed', sans-serif
 /*==========================
   HEADER SECTION
@@ -97,14 +99,58 @@ footer
 
 main
 	margin: 0 auto /*centers main within the body*/
-	width: 95%	/*makes main 95% width of body*/
+	width: 100%	/*makes main 100% width of body*/
+	background-color: lightgreen
+
+/*================
+  MAIN-UP SECTION
+  ================*/
 
 
+/*=================
+  MAIN-DOWN SECTION
+  =================*/
+#main-down
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
 
+.main-down-box
+	background-color: white
+	width: 45%
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 4vw 5vw
+	border-top: 3px solid black
+	box-shadow: 1px 1px grey, -1px -1px grey
 
+article
+	width: 85%
+	height: 30vw
+	margin: 7.5% 0
+	
+#main-down-box-left
+	margin-left: 4vw
 
+#main-down-box-right
+	margin-right: 4vw
 
+.h4-text
+	font-size: 120%
+	font-weight: normal
+	color: #47598f
 
+h4, p
+	margin: 0
+
+.text-containers
+	margin-bottom: 4%
+
+.benefits-container	
+	border-top: 1px solid grey
+	padding-top: 7%
 
 /*===============
   FOOTER SECTION
@@ -115,7 +161,7 @@ footer
 	display: flex
 	flex-flow: column
 	align-items: flex-start
-	margin-top: 8vw
+	margin-top: 6vw
 
 #footer-logo
 	width: 100%
