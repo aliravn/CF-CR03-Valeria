@@ -154,8 +154,9 @@
 		var hps = Number(document.getElementById("hps").value); // gets value of hps from form
 		console.log(name, age, country, hps);
 		// add checker for numbers and restart the calculation again
-		// add else if checking by value of input country Austria, Hungary, Greece
-		if (country == "at") {
+		if (isNaN(age) || isNaN(hps)) {
+			document.getElementById("output").innerHTML = "Dear <b>" + name + "</b>, we cannot proceed with your request. Please make sure, that you input correct data in each field."
+		} else if (country == "at") {
 			var result = hps * 100 / age + 50; // testcase Austria - OK
 		} else if (country == "hu") {
 			var result = hps * 120 / age + 100; // testcase Hungary - OK
@@ -163,7 +164,7 @@
 			var result = ((hps * 150) / (age + 3)) + 50; // testcase Greece - Ok
 		}
 		console.log(result);
-
+		// create 4th testcase with different output
 		var insurance = result.toFixed(2); // rounds value of var result to max. 1 dec. point
 		document.getElementById("output").innerHTML = "Dear <b>" + name + "</b>, insurance for your car will cost <b>" + insurance + " EUR </b>";
 	}
