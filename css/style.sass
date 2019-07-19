@@ -1,8 +1,11 @@
 $header-color: #fff3f3
 $footer-color: #171717
 $text-color: #ffffff
-$h4-text-color: #525F87
 
+/*removes default margin from body, set auto-margin on both sides to center content*/
+/*sets body width to be 95% of the screen width*/
+/*applies font size to the whole body*/
+/*applies font type to the whole body, link to web font in html file*/
 body
 	margin: 0 auto
 	width: 95%
@@ -95,10 +98,11 @@ footer
 /*===============
   MAIN SECTION
   ===============*/
-
+/*centers main within the body*/
+/*makes main 100% width of body*/
 main
-	margin: 0 auto /*centers main within the body*/
-	width: 100%	/*makes main 100% width of body*/
+	margin: 0 auto
+	width: 100%	
 
 h1, h2, h3, h4, p
 	margin: 0
@@ -158,17 +162,19 @@ h1, h2, h3, h4, p
 	margin-bottom: 2vw
 	display: flex
 	flex-flow: column
+
 	span
 		width: 100%
 	input
-		width: 99.6%
+		width: 95%
 		height: 3.85vw
 		border: 1px solid black
-		padding: 0
+		padding-left: 1vw
+		font-size: 1.8vw
 	select
 		border: 1px	solid black
 		height: 4vw
-		font-size: 1.5vw
+		font-size: 1.8vw
 		background-color: $text-color
 
 #calc-btn
