@@ -28,7 +28,7 @@
 <!-- check font-type, is not Roboto condenced and borders/shadows/font size -->
 
 	<main>
-		<section id="main-up">
+		<div id="main-up">
 			<div id="page-header">
 				<h1>Car insurance</h1>
 			</div>
@@ -72,9 +72,9 @@
 				<span>Understanding your coverage options shouldn't be so hard</span>
 				<span id="line-two">We'll guide you through available coverage types, starting with who and what is covered</span>
 			</div>
-		</section>
+		</div>
 
-		<section id="main-down">
+		<div id="main-down">
 			<div class="main-down-box" id="main-down-box-left">
 				<article>
 					<div class="text-containers">
@@ -127,10 +127,8 @@
 					</div>
 				</article>
 			</div>
-		</section>
+		</div>
 	</main>
-
-<!-- MAIN in PROCESS-->
 
 	<footer>
 		<nav>
@@ -145,37 +143,7 @@
 		</div>
 	</footer>
 
-
-<script>	
-	function calculateInsurance() {
-		var name = document.getElementById("name").value; //gets value of name from form
-		var age = Number(document.getElementById("age").value); // gets value of age from form
-		var country = document.getElementById("country").value; // gets value of country from form
-		var hps = Number(document.getElementById("hps").value); // gets value of hps from form
-		console.log(name, age, country, hps);
-		// add checker for numbers and restart the calculation again
-		if (isNaN(age) || isNaN(hps)) {
-			document.getElementById("output").innerHTML = "Dear <b>" + name + "</b>, we cannot proceed with your request. Please make sure, that you input correct data in each field."
-		} else if (country == "at") {
-			var result = hps * 100 / age + 50; // testcase Austria - OK
-		} else if (country == "hu") {
-			var result = hps * 120 / age + 100; // testcase Hungary - OK
-		} else {
-			var result = ((hps * 150) / (age + 3)) + 50; // testcase Greece - Ok
-		}
-		console.log(result);
-		// create 4th testcase with different output
-		var insurance = result.toFixed(2); // rounds value of var result to max. 1 dec. point
-		document.getElementById("output").innerHTML = "Dear <b>" + name + "</b>, insurance for your car will cost <b>" + insurance + " EUR </b>";
-	}
-		document.getElementById("calc-button").addEventListener("click", calculateInsurance, false);
-	
-	// Anja and Christoph option with nice layout
-	// <div id="form-div">the whole form is inside the div</div> and it is also inside the style-div
-	// the submit button has an if and an EventListener on it, that triggers the function
-	// function has an if else statement to check if the input is a number with isNaN function
-	// after triggering the function everything iside form div is replaced with innerHTML (outut of the function into the right id elemnt)
-</script>	
+	<script src="js/script.js"></script>
 
 </body>
 </html>
