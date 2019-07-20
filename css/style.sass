@@ -94,7 +94,7 @@ footer
 		background-color: $footer-color
 		a
 			font-size: 1.8vw
-
+			font-weight: bold
 /*===============
   MAIN SECTION
   ===============*/
@@ -147,6 +147,7 @@ h1, h2, h3, h4, p
 	width: 50%
 	margin: 4% auto
 	h2		
+		color: #2c2c2c
 		font-size: 4.5vw
 		font-weight: normal
 		text-align: center
@@ -199,6 +200,7 @@ h1, h2, h3, h4, p
 	flex-flow: column
 	justify-content: center
 	align-items: center
+	color: #474747
 	font-size: 2.5vw
 	h3
 		font-weight: normal
@@ -225,12 +227,12 @@ h1, h2, h3, h4, p
 	align-items: center
 	margin: 4vw 5vw
 	border-top: 1px solid black
-	box-shadow: 1px 1px grey, -1px -1px grey
+	box-shadow: 2px 2px 3px lightgrey, -2px 0 3px lightgrey
 
 article
 	width: 85%
 	height: 30vw
-	margin: 7.5% 0
+	margin: 7.5% 0 0
 	
 #main-down-box-left
 	margin-left: 4vw
@@ -238,18 +240,28 @@ article
 #main-down-box-right
 	margin-right: 4vw
 
+.text-containers
+	margin-bottom: 4%
+	font-size: 80%
+
 .h4-text
-	font-size: 120%
+	font-size: 160%
 	font-weight: normal
 	color: #47598f
 
-.text-containers
-	margin-bottom: 4%
+.check
+	color: #36cdd1
 
 .benefits-container	
-	border-top: 1px solid grey
-	padding-top: 7%
+	border-top: 0.5px solid lightgrey
+	padding-top: 6%
+	span
+		color: #838996
 
+.check
+		color: #36cdd1
+		font-size: 2.5vw
+		
 /*===============
   FOOTER SECTION
   ===============*/
@@ -259,7 +271,7 @@ footer
 	display: flex
 	flex-flow: column
 	align-items: flex-start
-	margin-top: 6vw
+	margin-top: 5vw
 
 #footer-logo
 	width: 100%
@@ -277,7 +289,7 @@ footer
 	height: 3vw
 	display: flex
 	justify-content: center
-	align-items: flex-end
+	align-items: center
 	color: $text-color
 	font-size: 1.5vw
 
