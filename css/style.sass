@@ -11,6 +11,9 @@ body
 	width: 95%
 	font-size: 2vw
 	font-family: 'Roboto Condensed', sans-serif
+
+#nokia
+	display: none
 /*==========================
   HEADER SECTION
   =========================*/
@@ -422,3 +425,17 @@ footer
 	#footer-text
 		height: 5vw
 		font-size: 2.5vw
+
+/*media-query easter egg =^.^= */
+@media screen and (max-width: 120px)
+	
+	header, nav, main, footer
+		display: none
+
+	#nokia
+		display: initial
+		text-align: center
+		font-size: 15vw
+		p
+			margin: 3vw 0
+			background-color: red
