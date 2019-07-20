@@ -162,7 +162,6 @@ h1, h2, h3, h4, p
 	margin-bottom: 2vw
 	display: flex
 	flex-flow: column
-
 	span
 		width: 100%
 	input
@@ -180,7 +179,7 @@ h1, h2, h3, h4, p
 #calc-button
 	width: 37%
 	height: 5vw
-	margin: 1vw auto 2vw
+	margin: 1vw auto 3vw
 	border-radius: 12px
 	font-size: 3vw
 	background-color: #339235
@@ -281,3 +280,82 @@ footer
 	align-items: flex-end
 	color: $text-color
 	font-size: 1.5vw
+
+/*=========================================================================
+  MEDIA QUERY SECTION
+  ========================================================================*/
+
+@media screen and (max-width: 520px)
+	
+	#header-banner
+		display: none	
+
+	nav
+		height: 6vw
+		justify-content: center
+		a
+			font-size: 4vw
+
+	#main-up, #main-down
+		height: auto
+	
+	#main-up
+		height: auto
+
+	#form-container
+		width: 90%
+		height: auto
+		border: 2px solid grey
+		border-radius: 9px
+
+	#form-header
+		width: 70%
+		height: auto
+		h2		
+			font-size: 6vw
+
+	#calculator
+		width: 90%
+		display: flex
+		flex-flow: column
+		align-items: center
+
+	.input-field-container
+		width: 70%
+		margin-bottom: 2vw
+		display: flex
+		flex-flow: column
+		font-size: 4.5vw
+		span
+			width: 100%
+		input
+			width: 97%
+			height: 5.85vw
+			font-size: 3vw
+		select
+			height: 6vw
+			font-size: 3vw
+
+	#calc-button
+		width: 45%
+		height: 8vw
+		margin: 4vw auto
+		border-radius: 12px
+		font-size: 4.5vw
+	
+	#output
+		width: 90%
+		height: 13vw
+		font-size: 3vw
+		margin-bottom: 2vw
+
+	#main-up-text
+		margin: 2vw auto
+		width: 100%
+		font-size: 2.7vw
+		h3
+			font-weight: normal
+			font-size: 4vw
+
+	#line-two
+		margin-bottom: 2vw
