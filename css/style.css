@@ -2,11 +2,14 @@
 /*sets body width to be 95% of the screen width */
 /*applies font size to the whole body */
 /*applies font type to the whole body, link to web font in html file */
+* {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold; }
+
 body {
   margin: 0 auto;
   width: 95%;
-  font-size: 2vw;
-  font-family: "Roboto Condensed", sans-serif; }
+  font-size: 2vw; }
 
 #nokia {
   display: none; }
@@ -84,7 +87,8 @@ nav {
     margin: auto 0;
     margin-left: 2vw;
     color: #ffffff;
-    font-size: 2.5vw; }
+    font-size: 2.5vw;
+    font-weight: bold; }
 
 /*sets background-color of footer navbar via variable (see line 2) */
 /*sets font-size of footer navbar */
@@ -115,7 +119,7 @@ h1, h2, h3, h4, p {
   background-size: 100%;
   background-color: lightgrey;
   width: 100%;
-  height: 83vw; }
+  height: 85vw; }
 
 #page-header {
   width: 100%;
@@ -123,10 +127,9 @@ h1, h2, h3, h4, p {
   display: flex;
   align-items: flex-end;
   margin-bottom: 2vw;
-  font-size: 3vw;
+  font-size: 2.2vw;
   color: #ffffff; }
   #page-header h1 {
-    font-weight: normal;
     margin-left: 3vw; }
 
 #form-container {
@@ -148,7 +151,6 @@ h1, h2, h3, h4, p {
   #form-header h2 {
     color: #2c2c2c;
     font-size: 4.5vw;
-    font-weight: normal;
     text-align: center; }
 
 #calculator {
@@ -166,20 +168,20 @@ h1, h2, h3, h4, p {
     width: 100%; }
   .input-field-container input {
     width: 95%;
-    height: 3.85vw;
+    height: 3.75vw;
     border: 1px solid black;
     padding-left: 1vw;
     font-size: 1.8vw; }
   .input-field-container select {
     border: 1px solid black;
-    height: 4vw;
+    height: 4.2vw;
     font-size: 1.8vw;
     background-color: #ffffff; }
 
 #calc-button {
   width: 37%;
   height: 5vw;
-  margin: 1vw auto 3vw;
+  margin: 1vw auto 5vw;
   border-radius: 12px;
   font-size: 3vw;
   background-color: #339235;
@@ -189,7 +191,7 @@ h1, h2, h3, h4, p {
   width: 70%;
   height: 10vw;
   text-align: center;
-  font-size: 2vw;
+  font-size: 3vw;
   color: #339235; }
 
 #main-up-text {
@@ -202,12 +204,12 @@ h1, h2, h3, h4, p {
   color: #474747;
   font-size: 2.5vw; }
   #main-up-text h3 {
-    font-weight: normal;
     font-size: 4vw; }
 
 #line-two {
-  width: 60%;
-  text-align: center; }
+  width: 55%;
+  text-align: center;
+  margin-bottom: 1vw; }
 
 /*=================
  * MAIN-DOWN SECTION
@@ -231,7 +233,7 @@ h1, h2, h3, h4, p {
 
 article {
   width: 85%;
-  height: 30vw;
+  height: 32vw;
   margin: 7.5% 0 0; }
 
 #main-down-box-left {
