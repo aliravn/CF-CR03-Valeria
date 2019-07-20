@@ -11,6 +11,7 @@
 			font-size: 1.8vw;
 			font-family: 'Open Sans Condensed', sans-serif;
 		}
+
 		#team-container {
 			width: 100%;
 			display: flex;
@@ -18,15 +19,18 @@
 			flex-wrap: wrap;
 			justify-content: space-between;
 		}
+
 		h1 {
 			font-size: 3vw;
 			margin: 2vw 0;
 		}
+
 		.team {
 			display: flex;
 			margin-bottom: 2vw;
 			width: 49%;
 		}
+
 		.bio {
 			display:  flex;
 			flex-flow: column;
@@ -34,21 +38,26 @@
 			justify-content: flex-start;
 			padding: 1vw;
 		}
+
 		.bio-header {
 			color: darkblue;
 		}
+
 		h2 {
 			font-size: 2vw;
 			color: darkblue;
 		}
+
 		#address {
 			width: 100%;
 			text-align: center;
 			margin-top: 2vw;
 		}
+
 		#map {
 			margin-top: 2vw;
 		}
+
 		@media screen and (max-width: 520px) {
 			* {
 				font-size: 3.5vw;
@@ -71,7 +80,7 @@
 				font-size: 4.2vw;
 			}
 		}
-
+/* has so be here, otherwise interfers with main sass-sheet */
 		@media screen and (max-width: 120px) {
 			header, nav, main, footer {
 				display: initial;

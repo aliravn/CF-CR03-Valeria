@@ -150,7 +150,7 @@ h1, h2, h3, h4, p {
   margin: 4% auto; }
   #form-header h2 {
     color: #2c2c2c;
-    font-size: 4.5vw;
+    font-size: 4.6vw;
     text-align: center; }
 
 #calculator {
@@ -181,9 +181,9 @@ h1, h2, h3, h4, p {
 #calc-button {
   width: 37%;
   height: 5vw;
-  margin: 1vw auto 5vw;
+  margin: 1vw auto 4vw;
   border-radius: 12px;
-  font-size: 3vw;
+  font-size: 3.4vw;
   background-color: #339235;
   color: #ffffff; }
 
@@ -191,7 +191,7 @@ h1, h2, h3, h4, p {
   width: 70%;
   height: 10vw;
   text-align: center;
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: #339235; }
 
 #main-up-text {
@@ -243,7 +243,7 @@ article {
   margin-right: 4vw; }
 
 .text-containers {
-  margin-bottom: 4%;
+  margin-bottom: 1.5%;
   font-size: 80%; }
 
 .small-text {
@@ -256,7 +256,7 @@ article {
   color: #47598f; }
 
 .benefits-container {
-  border-top: 0.5px solid lightgrey;
+  border-top: 0.5px solid rgba(211, 211, 211, 0.3);
   padding-top: 6%; }
   .benefits-container span {
     color: #838996;
@@ -265,10 +265,6 @@ article {
 .check {
   color: #36cdd1;
   font-size: 2.5vw; }
-
-#tm {
-  font-family: serif;
-  font-size: 1.8vw; }
 
 /*===============
  * FOOTER SECTION
@@ -370,12 +366,13 @@ footer {
   #main-up-text {
     margin: 2vw auto;
     width: 100%;
-    font-size: 2.7vw; }
+    font-size: 2.8vw; }
     #main-up-text h3 {
       font-weight: normal;
       font-size: 4vw; }
 
   #line-two {
+    width: 60%;
     margin-bottom: 2vw; }
 
   #main-down {
