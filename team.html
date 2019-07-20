@@ -10,11 +10,12 @@
 		* {
 			font-size: 1.8vw;
 		}
-		main {
+		#team-container {
 			width: 100%;
 			display: flex;
 			flex-flow: row;
 			flex-wrap: wrap;
+			justify-content: space-between;
 		}
 		h1 {
 			font-size: 3vw;
@@ -46,6 +47,29 @@
 		#map {
 			margin-top: 2vw;
 		}
+		@media screen and (max-width: 520px) {
+			* {
+				font-size: 3.5vw;
+			}
+			#team-container {
+				flex-flow: column;
+				justify-content: space-between;
+			}
+			.team {
+				width: 100%;
+				background-color: lightblue;
+			}
+			.bio-header {
+				font-size: 4vw;
+			}
+			h1 {
+				font-size: 4.5vw;
+			}	
+			h2 {
+			font-size: 4.2vw;
+			}
+		}
+
 	</style>
 
 </head>
@@ -67,66 +91,68 @@
 		<a href="team.html">Team</a>
 	</nav>
 
+	<main>
 		<div>
 			<h1>Meet our international team:</h1>
 		</div>
 
-	<main>		
-		<div class="team">
-			<img src="img/team_jen.png" alt="team_jen.png">
-			<div class="bio">
-				<span class="bio-header">Team Supervisor</span>
-				<span>Languages: English, German, Spanish</span>
-				<span>Email: supervisor@cf-insurance.at</span>
+		<div id="team-container">
+			<div class="team">
+				<img src="img/team_jen.png" alt="team_jen.png">
+				<div class="bio">
+					<span class="bio-header">Team Supervisor</span>
+					<span>Languages: English, German, Spanish</span>
+					<span>Email: supervisor@cf-insurance.at</span>
+				</div>
 			</div>
-		</div>
 
-		<div class="team">
-			<img src="img/team_nikki.png" alt="team_nikki.png">
-			<div class="bio">
-				<span class="bio-header">Reservation Agent</span>
-				<span>Languages: English, German, Chinese</span>
-				<span>Email: nikki@cf-insurance.at</span>
-			</div>				
-		</div>
-		<div class="team">
-			<img src="img/team_wyatt.png" alt="team_wyatt.png">
-			<div class="bio">
-				<span class="bio-header">Reservation Agent</span>
-				<span>Languages: English, German, Italian</span>
-				<span>Email: wyatt@cf-insurance.at</span>
-			</div>				
-		</div>
-		<div class="team">
-			<img src="img/team-jonesy.png" alt="team-jonesy.png">
-			<div class="bio">
-				<span class="bio-header">Reservation Agent</span>
-				<span>Languages: English, German, Spanish</span>
-				<span>Email: jonesy@cf-insurance.at</span>
-			</div>				
-		</div>
-		<div class="team">
-			<img src="img/team_jude.png" alt="team_jude.png">
-			<div class="bio">
-				<span class="bio-header">Reservation Agent Trainee</span>
-				<span>Languages: English, German, Hungarian</span>
-				<span>Email: jude@cf-insurance.at</span>
-			</div>				
-		</div>
-		<div class="team">
-			<img src="img/team_caitlin.png" alt="team_caitlin.png">
-			<div class="bio">
-				<span class="bio-header">Customer Relations Agent</span>
-				<span>Languages: English, German, French</span>
-				<span>Email: caitlin@cf-insurance.at</span>
-			</div>				
-		</div>
+			<div class="team">
+				<img src="img/team_nikki.png" alt="team_nikki.png">
+				<div class="bio">
+					<span class="bio-header">Reservation Agent</span>
+					<span>Languages: English, German, Chinese</span>
+					<span>Email: nikki@cf-insurance.at</span>
+				</div>				
+			</div>
+			<div class="team">
+				<img src="img/team_wyatt.png" alt="team_wyatt.png">
+				<div class="bio">
+					<span class="bio-header">Reservation Agent</span>
+					<span>Languages: English, German, Italian</span>
+					<span>Email: wyatt@cf-insurance.at</span>
+				</div>				
+			</div>
+			<div class="team">
+				<img src="img/team-jonesy.png" alt="team-jonesy.png">
+				<div class="bio">
+					<span class="bio-header">Reservation Agent</span>
+					<span>Languages: English, German, Spanish</span>
+					<span>Email: jonesy@cf-insurance.at</span>
+				</div>				
+			</div>
+			<div class="team">
+				<img src="img/team_jude.png" alt="team_jude.png">
+				<div class="bio">
+					<span class="bio-header">Reservation Agent Trainee</span>
+					<span>Languages: English, German, Hungarian</span>
+					<span>Email: jude@cf-insurance.at</span>
+				</div>				
+			</div>
+			<div class="team">
+				<img src="img/team_caitlin.png" alt="team_caitlin.png">
+				<div class="bio">
+					<span class="bio-header">Customer Relations Agent</span>
+					<span>Languages: English, German, French</span>
+					<span>Email: caitlin@cf-insurance.at</span>
+				</div>				
+			</div>
+		</div>	
 		<section id="address">
 			<h2>You can find us here:</h2>
 			<div>Kettenbrückengasse 25, 1050 Wien</div>
 			<div>+43 1 123 45 67</div>
-			<div><span class="bio-header">Mo-Fr</span> 09:00 - 16:00</div>
-			<div><span class="bio-header">Sa</span> 09:00 - 12:00</div>
+			<div><b>Mo-Fr</b> 09:00 - 16:00</div>
+			<div><b>Sa</b> 09:00 - 12:00</div>
 			<div id="map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.529149672998!2d16.357169315922718!3d48.196422879228166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d078670bd1a79%3A0xfff3e774d955069c!2sKettenbr%C3%BCckengasse+25%2C+1050+Wien!5e0!3m2!1sen!2sat!4v1563624029686!5m2!1sen!2sat" width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
