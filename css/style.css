@@ -73,7 +73,8 @@ header {
 /*width of nav-bar is 100% of body width */
 /*height of nav-bar is fixed in vw */
 /*removes underline from nav-bar elements (links) */
-/*gives links a margin of 2vw on left and right to pull from each other and from left navbar border */
+/*removes side margins from nav-bar elements (links) and set auto margin on top and bottom */
+/*gives links a margin of 2vw on left to pull from each other and from left navbar border */
 /*sets text color of links to white via variable (see line 3) */
 /*sets font-size of header navbar */
 nav {
@@ -87,8 +88,7 @@ nav {
     margin: auto 0;
     margin-left: 2vw;
     color: #ffffff;
-    font-size: 2.5vw;
-    font-weight: bold; }
+    font-size: 2.5vw; }
 
 /*sets background-color of footer navbar via variable (see line 2) */
 /*sets font-size of footer navbar */
@@ -107,6 +107,7 @@ main {
   margin: 0 auto;
   width: 100%; }
 
+/*removes all default margins from the h and p elements */
 h1, h2, h3, h4, p {
   margin: 0; }
 
