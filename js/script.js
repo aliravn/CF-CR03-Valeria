@@ -5,7 +5,7 @@ function calculateInsurance() {
 	var hps = Number(document.getElementById("hps").value); // gets value of hps from form
 	var errMessageNaN = "We cannot proceed with your request. <br>Please make sure, that you input correct data in each field.";
 	var errMessageContact = "At the moment we cannot provide calculation for your request. Please contact us per email to get a quote.";
-	console.log(name, age, country, hps);
+	//console.log(name, age, country, hps);
 	// add checker for numbers and restart the calculation again
 	if (isNaN(age) || isNaN(hps) || name.length == 0) {
 		document.getElementById("output").innerHTML = errMessageNaN;
