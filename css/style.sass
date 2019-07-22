@@ -20,17 +20,6 @@ body
 /*==========================
   HEADER SECTION
   =========================*/
-/*background of header assigned by a sass-variable*/
-/*header width is 100% of body width*/
-/*header width is 9vw of the of body width*/
-/*if there is no fix height, header-banner-a will need margin up and bottom to space from container border*/
-/*it will resize wrongly, taking full space between banner and logo, bring*/
-/*items inside the header will be displayed flex*/
-/*items will be horizontally centered with free space equally between them*/
-/*items are vertically centered within header height*/
-/*sets width and height of images(logo/banner) to be 100% width & height of respective container*/
-/*object-fit: cover cuts off all parts of image that does not fir into container*/
-/*logo container is div, banner immediate container is a-link nested inside div-container*/
 header
 	background-color: $header-color
 	width: 100% 
@@ -107,15 +96,10 @@ h1, h2, h3, h4, p
 
 /*Car insurance section*/
 #page-header
-	width: 100%
-	height: 9vw
-	display: flex
-	align-items: flex-end
-	margin-bottom: 2vw
-	font-size: 2.2vw
 	color: $text-color
-	h1
-		margin-left: 3vw
+	font-size: 2em
+	margin-left: 3vw
+	margin-bottom: 1.5vw
 
 #form-container
 	background-color: rgba(255, 255, 255, 0.8)
@@ -307,6 +291,9 @@ footer
 	
 	#main-up
 		height: auto
+
+	#page-header
+		font-size: 3.5em
 
 	#form-container
 		width: 90%
