@@ -295,10 +295,9 @@ footer {
     border-radius: 9px; }
 
   #form-header {
-    width: 70%;
-    height: auto; }
-    #form-header h2 {
-      font-size: 6vw; }
+    width: 65%;
+    height: auto;
+    font-size: 6vw; }
 
   #calculator {
     width: 90%;
