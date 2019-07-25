@@ -7,7 +7,7 @@ function calculateInsurance() {
 	var errMessageContact = "At the moment we cannot provide calculation for your request. Please contact us per email to get a quote.";
 	//console.log(name, age, country, hps);
 	// add checker for numbers and restart the calculation again
-	if (isNaN(age) || isNaN(hps) || name.length == 0) {
+	if (isNaN(age) || isNaN(hps) || name.length == 0 || age.length == 0 || hps.length == 0) {
 		document.getElementById("output").innerHTML = errMessageNaN;
 		return false;
 	} else if (country == "at") {
